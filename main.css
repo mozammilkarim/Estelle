@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #143647 15%, #0d6c90);
+}
+
+header {
+    padding: 2rem;
+}
+
+header img {
+    margin-right: 2em;
+}
+
+.rightPortion {
+    display: flex;
+    position: fixed;
+    width: 40vw;
+    background-image: url(./videos/video.mp4);
+    right: 0px;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+}
+
+.navLinks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #b4b1aa;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.earlyLink {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.icons a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+video {
+    object-fit: cover;
+    width: 45vw;
+    height: 100vh;
+    outline: none;
+    overflow: hidden;
+}
+
+.rightPortion>a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    border: 0.1rem solid white;
+    padding: 0.5rem 0.8rem;
+    left: 4rem;
+    top: 4rem;
+    font-size: 1rem;
+}
+
+.midBox {
+    border-right: 0.2rem solid #00bcd4;
+    width: 70%;
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+    border-left: none;
+    z-index: 1;
+    padding-left: 3rem;
+}
+
+.midBoxText p {
+    color: #9e9e9e;
+}
+
+.midBoxText {
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    padding-top: 1rem;
+    color: white;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.midBox::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-left: 0.2rem solid #00bcd4;
+    border-top: 0.2rem solid #00bcd4;
+}
+
+.midBox:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-left: 0.2rem solid #00bcd4;
+    border-bottom: 0.2rem solid #00bcd4;
+}
+
+input {
+    width: 70%;
+    outline: none;
+    background: none;
+    border: none;
+    font: inherit;
+    border-bottom-style: inset;
+    margin: 2rem 0;
+}
+
+.dotsPattern {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+.icons {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.fi {
+    color: #a6a0a0;
+    padding: 0.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+    left: 5rem;
+    color: #9e9e9e;
+}
